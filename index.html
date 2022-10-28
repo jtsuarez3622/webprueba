@@ -1,42 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PAGINA WEB DE PRUEBA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <title>Rosario Alisados✨</title>
 </head>
 
-
-
 <body>
-   <header>
-    <H1>Titulo: WEB DE PRUEBA</H1>
-    <H2>Subtitulo: Primera pagina Web escrita en VS CODE</H2>
-    <nav>
-        <ul>
-            <li>
-                <a href="Turnos.html">Turnos</a>
-            </li>
-            <li>
-                <a href="Tienda.html">Tienda<a>
-            </li>
-            <li>
-                <a href="Servicios.html">Servicios</a>
-            </li>
-        </ul>
-    </nav>
+    <header>
+        <div class="logotipo">
+        <img src="Imagenes/logotipo largo.png" 
+            width="1200"
+            height="400"
+        />
+        </div>
 
-   </header> 
-   
-   
-   <main>
+        <nav>
+            <ul class="panel-nav">
+                <li>
+                    <a href="#contenedor turnos">Turnos</a>
+                </li>
+                <li>
+                    <a target="_blank" href="/views/Productos.html">Productos<a>
+                </li>
+                <li>
+                    <a href="#contenedor-tratamientos">Tratamientos</a>
+                </li>
+                <li>
+                    <a href="#contenedor-pie">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
-   </main>
-   
-   
-   <footer>
 
-   </footer>
+    <main>
+        <h1>
+            Reservá tu Turno!
+        </h1>
+        <div id="contenedor-turnos" class="contenedor-turnos">
+                <div>      
+                    <form class="formulario" action="/formulario" method="POST">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" id="Nombre" name="Nombre">
+                        <br/>
+                        <label for="Tratamiento">Tratamiento</label>
+                        <input type="text" id="Tratamiento" name="Tratamiento">
+                        <br/>
+                        <label for="Fecha">Fecha</label>
+                        <input type="text" id="Fecha" name="Fecha">
+                        <br/>                        
+                        <label for="email">email</label>
+                        <input type="text" id="email" name="email">
+                        <br/>
+                        <textarea cols="35"rows="10"placeholder="ingrese comentario" name="comentario"></textarea>
+                        <br/>
+                        <input type="submit" /> <input type="reset"/>
+                     
+                    </form>
+                </div>
+
+                <div>
+                    <img
+                    src="/Imagenes/collage 1.jpg"
+                    width="500"
+                    />
+                </div>
+        </div>
+    
+
+        </section>
+
+        <h2>Tratamientos</h2>
+
+        <div id="contenedor-tratamientos" class="contenedor-tratamientos">
+            <div><img src="/Imagenes/tratamiento 1.jpeg" width="400"></div>
+            <div><img src="/Imagenes/tratamiento 2.jpeg" width="400"></div>
+            <div><img src="/Imagenes/tratamiento 3.jpeg" width="400"></div>
+        </div>
+
+
+       
+        <div id="contendor-productos" class="contendor-productos"> 
+            <img src="/Imagenes/logotipo productos.png">
+        </div>
+        <h2>Productos......pagina en desarrollo
+            <br>
+        <p>Proximamente tendremos novedades para usted!! </p>
+
+        </h2>
+        <br> 
+        <br>
+        <br> 
+        <br>
+        <br> 
+         <br>
+
+
+        <div class="iframe-insta">
+            <iframe width="347" height="618" src="https://www.youtube.com/embed/kcvj25PvhiQ" title="26 de octubre de 2022" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+
+    </main>
+
+    <hr />
+
+    <footer>
+        <div id="contenedor-pie" class="contenedor-pie">
+            <div>Contacto</div>
+            <div>Horario de atencion </div>
+            <div>Nuestra redes</div>
+            <div> Ubicacion
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26226.49380145693!2d-58.31547070632724!3d-34.747739547017616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32dcffd6f483d%3A0x773aa43b7ef2e4ba!2sQuilmes%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1666816320653!5m2!1ses!2sar"
+                    width="280" height="280" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe> 
+            </div>
+        </div>
+    </footer>
+
 </body>
+
 </html>

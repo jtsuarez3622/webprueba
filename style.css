@@ -45,13 +45,11 @@ h2{ text-align: center;
     background-color: rgb(105, 230, 128);
 }
 
-
-
-
 .contenedor-turnos{ 
     display: flex;
     flex-direction: row;
-    justify-content:space-around}
+    justify-content:space-around;
+}
 
 .formulario{
     background-color: rgba(45, 3, 3, 0.231);
@@ -96,6 +94,20 @@ h2{ text-align: center;
     flex-direction: row;
     justify-content:space-around
 }
+
+.cards-wrapper {
+    display: flex;
+}
+
+
+.card{
+    margin:0 .5em;
+   width: calc(100%3); 
+}
+
+
+
+
 
 .iframe-insta{text-align: center;}
 
